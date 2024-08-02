@@ -1,17 +1,19 @@
 package programmerzamannow.jpa.entity;
 
 import jakarta.persistence.*;
+/*
 import programmerzamannow.jpa.listener.UpdatedAtListener;
+*/
 
 import java.time.LocalDateTime;
 import java.util.Calendar;
 
 @Entity
 @Table(name = "categories")
-@EntityListeners({
+/*@EntityListeners({
         UpdatedAtListener.class
-})
-public class Category implements UpdatedAtAware{
+})*/
+public class Category {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
