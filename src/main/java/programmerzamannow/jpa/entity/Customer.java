@@ -16,6 +16,30 @@ public class Customer {
     @Column(name = "primary_email")
     private String primaryEmail;
 
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getPrimaryEmail() {
+        return primaryEmail;
+    }
+
+    public void setPrimaryEmail(String primaryEmail) {
+        this.primaryEmail = primaryEmail;
+    }
+
     private Boolean married;
 
     private Byte age;
@@ -33,7 +57,6 @@ public class Customer {
     public void setFullName(String fullName) {
         this.fullName = fullName;
     }
-
     public CustomerType getType() {
         return type;
     }
@@ -58,27 +81,4 @@ public class Customer {
         this.age = age;
     }
 
-    public String getPrimaryEmail() {
-        return primaryEmail;
-    }
-
-    public void setPrimaryEmail(String primaryEmail) {
-        this.primaryEmail = primaryEmail;
-    }
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 }

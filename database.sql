@@ -8,6 +8,8 @@ CREATE TABLE customers
     name VARCHAR(100) NOT NULL
 ) ENGINE InnoDB;
 
+drop table categories;
+
 SELECT *
 FROM customers;
 
@@ -29,6 +31,15 @@ ALTER TABLE customers
 
 ALTER TABLE customers
     ADD COLUMN married BOOLEAN;
+
+ALTER TABLE categories
+    DROP COLUMN age BOOLEAN;
+
+ALTER TABLE categories
+    DROP COLUMN married BOOLEAN;
+
+delete from categories
+  Where id = '2';
 
 SELECT *
 FROM customers;
